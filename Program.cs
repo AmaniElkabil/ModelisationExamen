@@ -10,6 +10,7 @@ namespace ModélisationExamen
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
