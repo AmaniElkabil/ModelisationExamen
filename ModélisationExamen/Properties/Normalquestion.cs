@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace ModélisationExamen
 {
-    internal class QCMquestion : Question
+    internal class Normalquestion : Question
     {
         protected string question;
         protected int id;
-        protected string choix; 
+        protected char reponse; 
 
-        public QCMquestion(string question , int id , string choix) 
+        public QCMquestion(string question , int id , char reponse) 
         {
             this.question = question;
             this.id = id;
-            this.choix = choix; 
+            this.reponse = reponse; 
         }
-        public Addchix (bool valeur)
+        public reponse ()
         {
         }
     }
