@@ -1,88 +1,23 @@
 ﻿using System;
-
-public class Question
-{
-	public  Question()
-	{
-		int nbr_quetion
-	}
-	public void réponse() 
-	{}
-}
-public class Ouverte : Question
-{
-	string reponse;
-	string correction;
-    public void reponseouve() 
-	{
-		char text;
-	}
-}
-
-public class QCM : Question
-{
-    string reponse;
-	string correction;
-	public void QCM() 
-	{ 
-	}
-}
-
-public class Choix_multiple : QCM
-{
-	string question;
-}
-
-public class Seul_reponse : Choix_multiple
-{
-}
-public class Plsr_reponse : Choix_multiple
-{
-}
-
-public class Dichotomique : QCM
-{
-    public class reponse_dia
-	{
-		bool reponse;
-		reponse_dia();
-	}
-
-}
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
-public class note
+namespace Examen
 {
-	float note;
-    string certitude;
-	bool question
-	public float peu_sur(string certitude = "peu_sur" )
-	{
-		if (question == true)
-		{
-			note = 1;
-		}
-		else
-			note = 0;
-	}
-    public float moyenne_sur(string certitude = "moyenne_sur")
+    internal class Question
     {
-        if (question == true)
-        {
-			note = 2;
-
-        }
-        else
-            note = -1;
+        int id;
+        string question;
+        int note; 
     }
-    public float tout_sur(string certitude = "tout_sur")
+    public Question (int id, int note , string question) 
     {
-        if (question == true)
-        {
-            note = 3;
+        this.id = id;
+        this.note = note;
+        this.question = question;
 
-        }
-        else
-            note = -3;
     }
 }
